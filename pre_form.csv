@@ -1,0 +1,19 @@
+user_ID,"Age:
+","Highest degree
+","How often do you engage in academic discussions, written arguments or debates?",How frequently do you usually use online discussion forums,self_ability_argument,Claim,Grounds,Warrant,Backing,Qualifier,Rebuttals,Research opposing viewpoints,Consider limitations to your own positio,Provide specific evidence to support claim,Predict and address counterarguments,identify_assumptions,analyze_evidence,identify_weaknesses,willing_change_position,consider_perspectives,structural_complexity
+person_1,23,High School,5,4,3,4,3,4,3,4,4,5,4,5,5,5,4,3,4,5,2
+person_2,19,High School,6,2,4,4,4,3,3,4,3,4,5,3,3,4,4,5,5,4,2
+person_3,42,Master's Degree,6,6,5,5,4,4,3,3,4,4,3,4,4,5,5,4,3,4,3
+person_4,24,Master's Degree,6,3,5,5,4,4,3,4,5,4,4,3,3,5,4,4,2,4,3
+person_5,26,Bachelor's Degree,5,7,3,4,3,3,2,4,4,3,5,3,3,3,4,5,5,3,2
+person_6,25,Bachelor's Degree,4,3,4,4,3,3,3,4,4,3,4,4,4,4,5,4,4,4,3
+person_7,24,Bachelor's Degree,6,5,4,4,3,3,3,3,2,2,3,3,2,4,3,4,4,3,2
+person_8,28,Bachelor's Degree,6,6,4,5,3,4,3,3,2,5,4,3,3,5,4,5,5,4,2
+person_9,27,Bachelor's Degree,5,5,6,6,6,5,4,4,5,4,5,6,6,6,6,5,6,5,2
+person_10,31,Master's Degree,6,3,5,6,5,4,4,5,4,4,5,5,5,6,4,5,4,5,3
+person_11,37,Doctorate,5,5,5,6,5,5,5,4,4,4,5,5,4,5,5,5,6,6,3
+person_12,22,Bachelor's Degree,5,5,4,6,4,5,3,5,5,6,5,5,6,4,6,4,6,6,4
+person_13,35,Bachelor's Degree,6,5,5,5,4,4,4,3,3,7,6,5,4,3,5,5,6,5,2
+person_14,24,Bachelor's Degree,6,4,5,5,5,6,3,4,4,4,4,5,5,5,4,6,6,4,2
+person_15,33,Master's Degree,6,5,3,4,5,5,3,4,3,6,6,5,4,5,5,6,7,5,3
+person_16,32,Bachelor's Degree,6,4,4,5,4,3,3,3,3,4,3,3,3,4,4,4,4,4,2
