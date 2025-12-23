@@ -1,6 +1,6 @@
 # ============================================================================
 # MIND ELEVATOR: FINAL CORRECT PATH ANALYSIS
-# ============================================================================
+# ===============
 # 
 # RESEARCH QUESTIONS:
 # RQ1: How does Mind Elevator influence structural complexity?
@@ -20,8 +20,7 @@
 #
 # Endogenous (Outcome):
 #   - ASE: Self-Efficacy in Argumentation improvement
-#
-# ============================================================================
+
 
 library(lavaan)
 library(tidyverse)
@@ -29,9 +28,9 @@ library(semPlot)
 
 setwd("C:/Users/Ali Goodarzi/Desktop/FINAL")
 
-# ============================================================================
+# ==================
 # STEP 1: LOAD DATA
-# ============================================================================
+
 
 cat("\n")
 cat(paste(rep("=", 100), collapse = ""))
@@ -49,9 +48,9 @@ cat(sprintf("✓ pre_form.csv: %d participants\n", nrow(pre_form)))
 cat(sprintf("✓ post_form.csv: %d participants\n", nrow(post_form)))
 cat(sprintf("✓ relevance_reddit.csv: %d ratings\n\n", nrow(relevance_reddit)))
 
-# ============================================================================
+# =================================================================
 # STEP 2: DEFINE MEASUREMENT SCALES
-# ============================================================================
+
 
 toulmin_items <- c("Claim", "Grounds", "Warrant", "Backing", "Qualifier", "Rebuttals")
 red_items <- c("identify_assumptions", "analyze_evidence", "identify_weaknesses",
@@ -66,9 +65,9 @@ cat("RQ1 (Structural Complexity): Argument Coding Scheme (1-4 scale)\n")
 cat("RQ2 (Self-Efficacy): Overall Argumentative Ability (1-7 scale)\n")
 cat("Moderator: Discussion Relevance (1-7 scale)\n\n")
 
-# ============================================================================
+# ==============
 # STEP 3: COMPUTE VARIABLES (CHANGE SCORES ONLY)
-# ============================================================================
+
 
 cat("COMPUTING CHANGE SCORES (Post - Pre):\n\n")
 
@@ -127,9 +126,9 @@ cat("DATA INTEGRITY:\n")
 cat(sprintf("✓ Complete cases: %d / %d\n", nrow(na.omit(analysis_df)), nrow(analysis_df)))
 cat(sprintf("✓ Missing values: %d\n\n", sum(is.na(analysis_df))))
 
-# ============================================================================
+# ====
 # STEP 4: STANDARDIZE VARIABLES
-# ============================================================================
+
 
 cat("STANDARDIZATION (z-scores: M=0, SD=1):\n")
 
@@ -144,9 +143,9 @@ for(var in c("TCK", "RED", "ASC", "ASE", "RS")) {
 }
 cat("\n")
 
-# ============================================================================
+# ===============
 # STEP 5: SPECIFY THE MODEL
-# ============================================================================
+
 
 cat(paste(rep("=", 100), collapse = ""))
 cat("\nMODEL SPECIFICATION\n")
@@ -154,7 +153,7 @@ cat(paste(rep("=", 100), collapse = ""))
 cat("\n")
 
 model_spec <- '
-  # ========================================================================
+  # 
   # STRUCTURAL PATHS: What predicts Complexity and Self-Efficacy?
   # ========================================================================
   
@@ -233,9 +232,9 @@ cat("✓ Variables = 5 (TCK, RED, ASC, ASE, RS)\n\n")
 
 summary(fit, fit.measures = TRUE, standardized = TRUE)
 
-# ============================================================================
+# ==========================
 # STEP 7: EXTRACT RESULTS
-# ============================================================================
+# =====================================================
 
 cat("\n")
 cat(paste(rep("=", 100), collapse = ""))
@@ -367,7 +366,7 @@ cat("✓ Path diagram: FINAL_CORRECT_PathDiagram.png\n\n")
 # ============================================================================
 
 cat(paste(rep("=", 100), collapse = ""))
-cat("\n✅ ANALYSIS COMPLETE - READY FOR THESIS\n")
+cat("\n ANALYSIS COMPLETE - READY FOR THESIS\n")
 cat(paste(rep("=", 100), collapse = ""))
 cat("\n")
 
@@ -377,3 +376,4 @@ cat("- Sample: N = 16 participants\n")
 cat("- Design: Saturated path analysis (df = 0, CFI = 1.0)\n")
 cat("- RQs answered: All three (Complexity, Self-Efficacy, Critical Thinking)\n")
 cat("- Output: One correct model, one set of results, one diagram\n\n")
+
