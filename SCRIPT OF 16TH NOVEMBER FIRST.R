@@ -29,7 +29,7 @@ library(semPlot)
 setwd("C:/Users/Ali Goodarzi/Desktop/FINAL")
 
 # ==================
-# STEP 1: LOAD DATA
+# STEP 1: LOAD 
 
 
 cat("\n")
@@ -49,7 +49,7 @@ cat(sprintf("✓ post_form.csv: %d participants\n", nrow(post_form)))
 cat(sprintf("✓ relevance_reddit.csv: %d ratings\n\n", nrow(relevance_reddit)))
 
 # =================================================================
-# STEP 2: DEFINE MEASUREMENT SCALES
+# STEP 2:  MEASUREMENT SCALES
 
 
 toulmin_items <- c("Claim", "Grounds", "Warrant", "Backing", "Qualifier", "Rebuttals")
@@ -331,9 +331,9 @@ cat("  - FINAL_CORRECT_Covariances.csv\n")
 cat("  - FINAL_CORRECT_IndirectEffects.csv\n")
 cat("  - FINAL_CORRECT_FullResults.txt\n\n")
 
-# ============================================================================
+
 # STEP 9: CREATE DIAGRAM
-# ============================================================================
+# =
 
 png("FINAL_CORRECT_PathDiagram.png", width = 14000, height = 9000, res = 450)
 
@@ -362,9 +362,8 @@ dev.off()
 cat("✓ Path diagram: FINAL_CORRECT_PathDiagram.png\n\n")
 
 # ============================================================================
-# COMPLETION
-# ============================================================================
-
+# main
+# ==================
 cat(paste(rep("=", 100), collapse = ""))
 cat("\n ANALYSIS COMPLETE - READY FOR THESIS\n")
 cat(paste(rep("=", 100), collapse = ""))
@@ -376,4 +375,5 @@ cat("- Sample: N = 16 participants\n")
 cat("- Design: Saturated path analysis (df = 0, CFI = 1.0)\n")
 cat("- RQs answered: All three (Complexity, Self-Efficacy, Critical Thinking)\n")
 cat("- Output: One correct model, one set of results, one diagram\n\n")
+
 
